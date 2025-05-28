@@ -1,0 +1,320 @@
+Here are answers to the AWT Lab Viva Questions based on the uploaded manuals:
+
+
+---
+
+Basics of C#
+
+1. .NET Framework: A platform for building and running applications on Windows.
+Components: CLR, BCL (Base Class Library), ASP.NET, ADO.NET, Windows Forms.
+
+
+2. CLR (Common Language Runtime): Manages execution of .NET programs.
+Features: Memory management, type safety, exception handling, garbage collection.
+
+
+3. Class & Object:
+
+Class: A blueprint (e.g., class Car { string color; })
+
+Object: Instance of a class (e.g., Car c = new Car();)
+
+
+
+4. Interface Use: Provides a contract that classes must follow; used for abstraction.
+
+
+5. Inheritance: Allows one class to inherit members of another.
+Types: Single, Multilevel, Hierarchical.
+
+
+6. Abstract Class: Cannot be instantiated; used to define base classes with/without implementations.
+
+
+7. Properties: Accessors (get/set) for private fields. Used for encapsulation.
+
+
+
+
+---
+
+Module 01: ASP.NET Basics
+
+1. Page Life Cycle Events: Page_Init, Page_Load, Page_PreRender, Page_Unload, etc.
+
+
+2. Single-file vs Code-behind:
+
+Single: Code and markup in one file.
+
+Code-behind: Separate .aspx and .aspx.cs files (cleaner & maintainable).
+
+
+
+3. Postback vs Cross-Page Posting:
+
+Postback: Page posts back to itself.
+
+Cross-Page: Posts to a different page.
+
+
+
+4. AutoPostBack: Automatically posts page back to server on control change (e.g., dropdown).
+
+
+
+
+---
+
+Module 02: UI in ASP.NET
+
+5. AdRotator: Rotates ads/images using an XML file. Shows different ad on each load.
+
+
+6. Advanced Server Controls:
+
+Validation controls, Calendar, AdRotator, FileUpload, Menu, TreeView, etc.
+
+
+
+7. Validation Controls: RequiredFieldValidator, RangeValidator, CompareValidator, etc.
+
+
+8. Master Page: Template for consistent layout.
+Content Pages fill placeholders defined in Master.
+
+
+9. jQuery: A JavaScript library for DOM manipulation.
+Use: via <script> tag, CDN, or bundle in ASP.NET.
+
+
+10. AngularJS: Frontend JS framework.
+Use: Add script, use Angular modules, controllers in .aspx page.
+
+
+11. NodeJS: JavaScript runtime to build scalable server-side apps.
+
+
+
+
+---
+
+Module 03: Database Programming
+
+1. ADO.NET: Framework for DB access.
+Objects: SqlConnection, SqlCommand, DataAdapter, DataReader, DataSet.
+
+
+2. Connected vs Disconnected:
+
+Connected: Live DB connection (e.g., DataReader).
+
+Disconnected: Uses DataSet, works offline.
+
+
+
+3. DataReader vs DataSet:
+
+DataReader: Read-only, forward-only.
+
+DataSet: In-memory, supports multiple tables.
+
+
+
+4. Stored Procedure: Precompiled SQL code.
+
+IN: input; OUT: output; INOUT: both directions.
+
+
+
+5. Data-Bound Controls:
+
+GridView: Tabular.
+
+DataList, Repeater: Templated lists.
+
+FormView, DetailsView: Single record.
+
+
+
+6. DataSource Controls: SqlDataSource, ObjectDataSource, XmlDataSource, etc.
+
+
+7. LINQ: Language Integrated Query – queries DBs/objects in C#. Cleaner and type-safe.
+
+
+8. Types of LINQ: LINQ to Objects, SQL, XML, Entities.
+Benefits: Less code, readable, compile-time checks.
+
+
+9. LINQ to SQL: Maps C# classes to SQL tables. Enables CRUD via LINQ queries.
+
+
+10. Entity Framework: ORM for .NET – works with DB via models. Supports Code-First, DB-First.
+
+
+
+
+---
+
+Module 04: Session & AJAX
+
+1. Need for Session: HTTP is stateless. Sessions store user data across requests.
+
+
+2. Client-Side Techniques: Cookies, ViewState, QueryString, HiddenField.
+
+
+3. Server-Side Techniques: Session, Application, Cache.
+
+
+4. Application State: Shared data across all users. Set via Application["key"].
+
+
+5. Session State: User-specific data stored on server.
+Set: Session["User"] = "Mariyanaaz";
+Get: Session["User"]
+
+
+6. Session Modes:
+
+InProc: Fast, but lost on restart.
+
+StateServer: External process.
+
+SQLServer: Persistent storage.
+
+Custom: Developer-defined.
+
+
+
+7. InProc vs OutProc:
+
+InProc: Stored in memory.
+
+OutProc: External storage (StateServer/SQL).
+
+
+
+8. AJAX: Asynchronous updates without full page reload.
+
+
+9. Benefits of AJAX: Faster UI, less bandwidth, better UX.
+
+
+10. AJAX Controls: ScriptManager, UpdatePanel, Timer, UpdateProgress.
+
+
+11. Pagination: Splits records into pages (e.g., GridView with AllowPaging).
+
+
+
+
+---
+
+Module 05: Web Services & WCF
+
+1. Web Service: Allows data exchange over HTTP using XML/SOAP.
+
+
+2. UDDI: Registry for publishing/discovering web services (now deprecated).
+
+
+3. SOAP: XML-based protocol for communication.
+
+
+4. WSDL: Describes how to access a web service.
+
+
+5. Hide Method: Don't mark with [WebMethod] attribute.
+
+
+6. WCF: Framework for service-oriented applications.
+
+
+7. ASMX vs WCF:
+
+ASMX: Legacy, HTTP only.
+
+WCF: Modern, supports multiple protocols.
+
+
+
+8. WCF Contracts:
+
+ServiceContract, OperationContract, DataContract, FaultContract.
+
+
+
+9. Hosting WCF: In IIS, Windows Service, Self-hosting.
+
+
+
+
+---
+
+Module 06: ASP.NET Core MVC
+
+1. MVC: Design pattern – Model, View, Controller. Promotes separation of concerns.
+
+
+2. Model: Holds business logic/data. Used for validation and DB interaction.
+
+
+3. Controller: Handles user input, updates models/views.
+
+
+4. View Techniques: Razor views, Partial views, View Components.
+
+
+5. ViewBag: Dynamic object to pass data from controller to view.
+
+
+6. ViewData: Dictionary used to pass data.
+
+
+7. TempData: Stores data for one redirect.
+
+
+8. Auto-Implemented Properties: Syntax-simplified properties (public string Name { get; set; }).
+
+
+9. Extension Method: Adds methods to existing types without inheritance.
+
+
+10. Strongly Typed View: View bound to a model using @model directive.
+
+
+11. Razor: View engine using @ syntax for embedding C# in HTML.
+
+
+12. HTML Helpers: Render form elements (@Html.TextBoxFor).
+
+
+13. Strongly Typed Helpers: Bind controls directly to model properties.
+
+
+14. Tag Helpers: HTML-like syntax (<input asp-for="Name" />).
+
+
+15. Layout: Shared page structure. Default: _Layout.cshtml.
+
+
+16. Validation: Via Data Annotations ([Required], [Range]) and jQuery validation.
+
+
+17. ViewResult vs ActionResult:
+
+ViewResult: Returns a view.
+
+ActionResult: Base class, can return View, Redirect, Json, etc.
+
+
+
+
+
+---
+
+Let me know if you'd like this in PDF or Word format!
+
+
